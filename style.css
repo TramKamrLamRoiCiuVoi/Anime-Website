@@ -1,0 +1,493 @@
+body {
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+#header{
+    position: relative;
+    z-index: 1;
+}
+#header-top {
+    background-color: rgb(69, 67, 67);
+    max-height: 70px;
+}
+
+#logo a {
+    display: block;
+    height: 70px;
+}
+
+#logo a img {
+    height: 100%;
+    width: auto;
+}
+
+#search {
+    padding: 15px 0px;
+}
+
+#search form {
+    width: 100%;
+}
+
+#search input {
+    border: none;
+    color: #ffff;
+}
+
+#search label {
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 3px;
+    color: #ffff;
+    font-weight: normal;
+}
+
+#register-login {
+    padding: 15px 30px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+#register-login .log-fb {
+    margin-left: 10px;
+}
+
+#header-bottom {
+    background-color: #000;
+}
+
+#header-bottom #navbar ul.list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#header-bottom #navbar ul.list li.item>a {
+    color: rgb(215, 213, 213);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#header-bottom #navbar ul.list ul.list-child a {
+    color: rgb(215, 213, 213);
+}
+
+#header-bottom #navbar ul.list li.item {
+    padding: 15px 0px;
+}
+
+#header-bottom #navbar ul.list li.item a {
+    transition: all 0.25s ease-in-out;
+}
+
+#header-bottom #navbar ul.list li.item:hover>a {
+    color: rgb(213, 51, 51);
+}
+
+#header-bottom #navbar ul.list ul.list-child {
+    position: absolute;
+    top: 53px;
+    display: none;
+    background-color: rgb(41, 40, 40);
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#header-bottom #navbar ul.list ul.list-child li {
+    padding-left: 15px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+#header-bottom #navbar ul.list ul.list-child li:hover {
+    background-color: rgb(96, 94, 94);
+}
+
+#header-bottom #navbar ul.list ul.list-child li:hover a {
+    color: rgb(247, 107, 107);
+}
+
+#header-bottom #navbar ul.list li.item:hover ul.list-child {
+    display: block;
+}
+
+#header-bottom #navbar ul.list li.item ul.list-child:hover {
+    display: block;
+}
+
+#navbar-responsive {
+    display: none;
+}
+#navbar-icon{
+    display: none;
+}
+/* ----------------------------End header----------------------- */
+
+
+#carouselId ol.carousel-indicators li{
+    background-color: red;
+   }
+
+ #anime-outstanding .container{
+    z-index: -100;
+}
+#anime-outstanding img{
+    width: 100%;
+    height: 500px               ;
+}
+
+/* --------------------------End Anime outstanding---------------------- */
+#anime-new-update .row{
+    margin: 0px;
+}
+nav.breadcrumb{
+    background-color: gray;
+}
+nav.breadcrumb a{
+    display: inline-block;
+    background-color: #607D8B;
+    color: #c3c3c3;
+    transition: all 0.25s ease-in-out;
+    padding: 8px 8px;
+    
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: none;
+}
+nav.breadcrumb a:hover{
+    background-color: rgb(31, 76, 76)
+}
+ul.anime-list li{
+    padding: 0px 10px;
+    margin-bottom: 15px;
+}
+.anime-item{
+    background-color: rgb(64, 64, 64);
+}
+.anime-item-top img{
+    width: 100%;
+    height: 242px;
+}
+.anime-item-top img:hover{
+    opacity: 0.7;
+}
+.anime-item-bottom a.anime-name{
+    color: #44e2ff;
+    height: 20px;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    transition: all 0.25s ease-in-out;
+    font-size: 14px;
+    font-weight: bold;
+}
+.anime-item-bottom a.anime-name:hover{
+    color: rgb(202, 202, 44);
+}
+.interactive{
+    position: relative;
+}
+.anime-view{
+   position: absolute;
+    right: 5px;
+}
+
+li#anime-list-navigation nav ul li a{
+    background-color: #131313;
+    color: #46E1FF;
+    border: none;
+    height: 100%;
+}
+li#anime-list-navigation nav ul li{
+    background-color: #131313;
+}
+li#anime-list-navigation nav ul li:hover a{
+    background-color: #000;
+    color: rgb(218, 203, 70);
+}
+li#anime-list-navigation nav ul li:hover{
+    background-color: #000;
+}
+
+
+
+
+/* ------------------------------End Anime List------------------------- */
+#anime-top-view{
+    position: relative;
+}
+div#anime-advertisment{
+    padding: 0px;
+    flex-basis: auto;
+}
+div#anime-advertisment h5{
+    margin: 0px;
+    font-size: 16px;
+}
+
+
+#anime-view{
+    position: absolute;
+    top: 220px;
+}
+#anime-view-time nav a.nav-link{
+    display: block;
+    background-color:  #607D8B;
+    color: #c3c3c3;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#anime-view-time nav a.nav-link:hover{
+    background-color: #000;
+}
+.tab-content li.view-item.most-view{
+   background-image: url("images/images-top-view/Day/New-Yofukashi-No-Uta-Visual-Revealed.jpg");
+   background-size: cover;
+   width: 100%;
+   height: 150px;
+   position: relative;
+}
+.tab-content li.view-item.most-view span.name-most-view{
+   position: absolute;
+   bottom:30px ;
+   left: 10px;
+}
+.tab-content li.view-item.most-view span.name-most-view a{
+    font-weight: bold;
+}
+.tab-content li.view-item.most-view span.name-most-view a:hover{
+    color: rgb(218, 203, 70)!important;
+}
+.tab-content li.view-item.most-view span.numbers-view{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color:rgb(253, 253, 2);
+}
+.tab-content li.view-item.most-view span.most-view-espisodes{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #811204;
+    font-size: 13px;
+    padding: 2px;
+}
+.tab-content li.view-item.most-view:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+.tab-content li.view-item.most-view:hover span.name-most-view a{
+    color: rgb(218, 203, 70)!important;
+}
+
+
+.view-item {
+    height: 60px;
+}
+.view-item .card .col-lg-4{
+    height: 60px;
+}
+.view-item .card img{
+      height: 100%;
+}
+.view-item .card .card-body{
+    padding: 5px;
+    background-color: #000;
+    position: relative;
+    height: 100%;
+}
+.view-item .card .card-body span.name-top-view{
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    display: block;
+    padding-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.view-item .card .card-body span.name-top-view:hover{
+    color: rgb(218, 203, 70)!important;
+}
+.view-item .card .card-body span.espisodes{
+    position: absolute;
+    display: block;
+    background-color:#811204;
+    padding: 2px;
+    font-size: 11px;
+    top: 5px;
+    right: 5px;
+}
+.view-item .card .card-body span.numbers-view{
+    color: #696969;
+    font-size: 11px;
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+}
+
+
+
+
+@media(max-width:1199.98px) {
+    #navbar {
+        display: none;
+    }
+    #search {
+        display: none;
+    }
+  
+    #navbar-icon {
+        color: #ffff;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        display: block;
+    }
+    #header-bottom{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+    }
+
+    #navbar-responsive {
+        display: block;
+        padding: 10px 0px;
+        padding-left: 30px;
+    }
+    
+    #navbar-res ul.list  {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar-res #register-login-respon{
+        display: none;
+    }
+    #navbar-res #register-login-respon ul{
+        display: block;
+        padding:10px 0px;
+        border-top: 0.5px solid #fff;
+        margin-top: 15px;
+    }
+    #navbar-res #register-login-respon ul li{
+        margin-bottom: 10px;
+    }
+    #navbar-res ul.list ul.list-child {
+        display: none;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0px;
+        padding-left: 15px;
+        
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #navbar-res ul.list ul.list-child#last{
+        border-bottom: none;
+    }
+   
+    #search-responsive {
+        margin-bottom: 15px;
+    }
+    #search-responsive form{
+        width: 100%;
+    }
+    #search-responsive input{
+        color: #ffff;
+        width: 90%;
+    }
+    #search-responsive label {
+        color: #fff;
+        display: inline-block;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #navbar-responsive ul.list>li{
+        margin-bottom: 10px;
+        padding-left: 5px;
+        position: relative;
+    }
+    #navbar-responsive ul.list>li a{
+        color: rgb(204, 199, 199);
+    }
+    #navbar-responsive ul.list li:hover>a{
+          color: rgb(231, 87, 87);
+    }
+ 
+    .anger{
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        width: 50px;
+        text-align: center;
+    }
+    .anger-top{
+        display: none;          
+    }
+
+
+   /* ---------------------- End header------------------ */
+    #anime-outstanding{
+        display: none;
+    }
+   
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media(max-width:991.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media(max-width:767.98px) {
+    #register-login {
+        display: none;
+    }
+    #navbar-res #register-login-respon{
+        display: block;
+    }
+    #navbar-icon{
+        display: block;
+    }
+    .anime-item-top img{
+        width: 100%;
+        height: 170px;
+    }
+}
+
+/* Extra small devices (portrait phone, less than 576px) */
+@media (max-width:575.98px) {
+    #search-responsive input{
+        color: #ffff;
+        width: 80%;
+    }
+    .anime-item-top img{
+        width: 100%;
+        height: 170px;
+    }
+    
+}

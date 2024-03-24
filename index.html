@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web anime hàng đầu Việt Nam</title>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="92fVu9ql"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="bg-dark">
+        <div id="header">
+            <div id="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div id="logo" class="col-xl-3 col-md-3 col-10">
+                            <a href="index.html"><img
+                                    src="images/images-logo/anime_avengers_logo_by_digiradiance-d93eyth.png" alt=""></a>
+                        </div>
+                        <div id="search" class="col-xl-3">
+                            <form class="rounded-pill d-inline-block bg-dark" action="">
+                                <label class="" for="search-anime"><i class="fa-solid fa-magnifying-glass"></i></label>
+                                <input data-toggle="tooltip" title="Nhập tên anime bạn muốn tìm" class="bg-dark rounded-pill d-inline-block " type="text" id="search-anime"
+                                    placeholder="Tìm: tên nime ...">
+                            </form>
+                        </div>
+                        <div id="register-login" class="col-xl-6 col-md-8">
+                            <div class="register-login-normal rounded bg-secondary">
+                                <!-- Button trigger modal -->
+                                <button id="register" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#model-register">
+                                  Đăng kí
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="model-register" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title">Đăng kí tài khoản</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                    </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="form-group">
+                                                      <label for="username" class="text-dark">Tên đăng nhập</label>
+                                                      <input type="text" class="form-control" name="username" id="username" placeholder="Bao gồm các kí tự, chữ số">
+                                                      <label for="password" class="text-dark">Mật khẩu</label>
+                                                      <input type="password" class="form-control" name="password" id="password" placeholder="Mật khẩu gồm ít nhất 8 kí tự">
+                                                      <label for="re-password" class="text-dark">Nhập lại mật khẩu</label>
+                                                      <input type="password" class="form-control" name="password" id="re-password" placeholder="Nhập lại mật khẩu">
+                                                      <label for="" class="text-dark">Email</label>
+                                                      <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="abc@gmail.com">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                <button type="button" class="btn btn-primary">Đăng kí</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <script>
+                                    // $('#exampleModal').on('show.bs.modal', event => {
+                                    //     var button = $(event.relatedTarget);
+                                    //     var modal = $(this);
+                                    //     // Use above variables to manipulate the DOM
+                                        
+                                    // });
+                                </script>
+                                <!-- <button class="log-nomar btn btn-secondary">Đăng nhập</button> -->
+                                <!-- Button trigger modal -->
+                                <button type="button" id="login " class="btn btn-secondary border-left" data-toggle="modal" data-target="#model-login">
+                                  Đăng nhập
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="model-login" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Đăng nhập</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="username">Tên tài khoản</label>
+                                                            <input type="text" name="" id="username" class="form-control" placeholder="Nhập tên tải khoản của bạn" aria-describedby="helpId">
+                                                            <label for="password">Mật khẩu</label>
+                                                            <input type="password" name="" id="password" class="form-control" placeholder="Nhập mật khẩu của bạn" aria-describedby="helpId">
+                                                          </div>
+                                                    </div>
+                                                    <div id="forget-pass" class="col-md-12">
+                                                        <a href="#" class="text-danger text-right d-block">Quên mật khẩu</a>
+                                                    </div>
+                                                    <div class="col-md-12" id="register-new">
+                                                        <span>Bạn chưa có tài khoản? Đăng kí ngay <a href="#"><i>Tại đây</i></a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                <button type="button" class="btn btn-primary">Đăng nhập</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="login-facebook" class="log-fb btn btn-primary" data-toggle="modal" data-target="#model-login-fb"><strong><i
+                                        class="fa-brands fa-facebook-f"></i></strong>
+                                Đăng nhập bằng facebook</button>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#model-login-fb">
+                            <strong><i class="fa-brands fa-facebook-f"></i></strong> Đăng nhập bằng facebook
+                        </button> -->
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="model-login-fb" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Đăng nhập bằng facebook</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                              <input type="text" name="" id="" class="form-control mb-3" placeholder="Nhập số di động hoặc Email" aria-describedby="helpId">
+                                              <input type="password" name="" id="" class="form-control" placeholder="Nhập mật khẩu" aria-describedby="helpId">
+                                              
+                                            </div>
+                                            <div class="col-md-12" id="register-new">
+                                                <span>Bạn chưa có tài khoản? Đăng kí ngay <a href="#"><i>Tại đây</i></a></span>
+                                            </div>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                        <button type="button" class="btn btn-primary">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="navbar-icon" class="col-md-1 col-2">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <nav class="col-xl-12" id="navbar">
+                            <ul class="list d-flex">
+                                <li class="item">
+                                    <a href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Thể loại</a>
+                                    <ul class="list-child">
+                                        <li class="item-child"><a href="">Đời thường</a></li>
+                                        <li class="item-child"><a href="">Drama</a></li>
+                                        <li class="item-child"><a href="">Shounen</a></li>
+                                        <li class="item-child"><a href="">Action</a></li>
+                                        <li class="item-child"><a href="">Shoujo</a></li>
+                                        <li class="item-child"><a href="">Harem</a></li>
+                                        <li class="item-child"><a href="">Ecchi</a></li>
+                                        <li class="item-child"><a href="">Josei</a></li>
+                                        <li class="item-child"><a href="">Commedy</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Trạng thái</a>
+                                    <ul class="list-child">
+                                        <li class="item-child"><a href="">Hoàn thành</a></li>
+                                        <li class="item-child"><a href="">Đang tiến hành</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Xem nhiều</a>
+                                    <ul class="list-child">
+                                        <li class="item-child"><a href="">Trong ngày</a></li>
+                                        <li class="item-child"><a href="">Tuần này</a></li>
+                                        <li class="item-child"><a href="">Tuần trước</a></li>
+                                        <li class="item-child"><a href="">Tháng này</a></li>
+                                        <li class="item-child"><a href="">Tháng trước</a></li>
+                                        <li class="item-child"><a href="">Mùa này</a></li>
+                                        <li class="item-child"><a href="">Mùa trước</a></li>
+                                        <li class="item-child"><a href="">Tất cả</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Bình luận nhiều</a>
+                                    <ul class="list-child">
+                                        <li class="item-child"><a href="">Trong ngày</a></li>
+                                        <li class="item-child"><a href="">Năm này</a></li>
+                                        <li class="item-child"><a href="">Năm trước</a></li>
+                                        <li class="item-child"><a href="">Mùa này</a></li>
+                                        <li class="item-child"><a href="">Mùa trước</a></li>
+                                        <li class="item-child"><a href="">Tất cả</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Kết hợp thể loại</a>
+                                    <ul class="list-child">
+                                        <li class="item-child"><a href="">Đời thường</a></li>
+                                        <li class="item-child"><a href="">Hành động + Hài hước</a></li>
+                                        <li class="item-child"><a href="">Harem + Hài hước</a></li>
+                                        <li class="item-child"><a href="">Đời thường + Học đường</a></li>
+                                        <li class="item-child"><a href="">Romance + Tragedy</a></li>
+                                        <li class="item-child"><a href="">Lãng mạn + Hành động</a></li>
+                                        <li class="item-child"><a href="">Ecchi + Harem</a></li>
+                                        <li class="item-child"><a href="">Học đường+ ecchi</a></li>
+                                        <li class="item-child"><a href="">Kết hợp ngẫu nhiên</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Năm phát hành</a>
+                                    <ul class="list-child">
+                                        <li class="item-child"><a href="">2010</a></li>
+                                        <li class="item-child"><a href="">2011</a></li>
+                                        <li class="item-child"><a href="">2012</a></li>
+                                        <li class="item-child"><a href="">2013</a></li>
+                                        <li class="item-child"><a href="">2014</a></li>
+                                        <li class="item-child"><a href="">2015</a></li>
+                                        <li class="item-child"><a href="">2016</a></li>
+                                        <li class="item-child"><a href="">2017</a></li>
+                                        <li class="item-child"><a href="">2018</a></li>
+                                        <li class="item-child"><a href="">2019</a></li>
+                                        <li class="item-child"><a href="">2020</a></li>
+                                        <li class="item-child"><a href="">2021</a></li>
+                                        <li class="item-child"><a href="">2022</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="item">
+                                    <a href="#">Hỏi đáp</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">TV/MOVIE</a>
+                                    <ul class="list-child">
+                                        <li class="item-child"><a href="">TV series</a></li>
+                                        <li class="item-child"><a href="">Movie</a></li>
+                                        <li class="item-child"><a href="">Drama-live action</a></li>
+                                        <li class="item-child"><a href="">Ova</a></li>
+                                        <li class="item-child"><a href="">SP</a></li>
+                                        <li class="item-child"><a href="">Cartoon</a></li>
+                                    </ul>
+
+                                </li>
+
+
+                            </ul>
+                        </nav>
+
+
+                        <!-- Navbar Responsive -->
+
+
+                        <div id="navbar-responsive" class="col-12 row">
+                            <div id="search-responsive" class="col-12">
+                                <form class="rounded-pill d-inline-block bg-dark" action="">
+                                    <label class="" for="search-anime"><i class="fa-solid fa-magnifying-glass"></i></label>
+                                    <input class="bg-dark rounded-pill d-inline-block" type="text" id="search-anime"
+                                        placeholder="Tìm: tên nime ...">
+                                </form>
+                            </div>
+                            <nav class="col-12" id="navbar-res">
+                                <ul class="list d-flex">
+                                    <li class="item">
+                                        <a href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li class="item">                                        
+                                        <a href="#">Thể loại</a>
+                                        <div class="anger-bot anger">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="list-child">
+                                            <li class="item-child"><a href="">Đời thường</a></li>
+                                            <li class="item-child"><a href="">Drama</a></li>
+                                            <li class="item-child"><a href="">Shounen</a></li>
+                                            <li class="item-child"><a href="">Action</a></li>
+                                            <li class="item-child"><a href="">Shoujo</a></li>
+                                            <li class="item-child"><a href="">Harem</a></li>
+                                            <li class="item-child"><a href="">Ecchi</a></li>
+                                            <li class="item-child"><a href="">Josei</a></li>
+                                            <li class="item-child"><a href="">Commedy</a></li>
+                                        </ul>
+                                        <div class="anger-top anger">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Trạng thái</a>
+                                        <div class="anger-bot anger">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="list-child">
+                                            <li class="item-child"><a href="">Hoàn thành</a></li>
+                                            <li class="item-child"><a href="">Đang tiến hành</a></li>
+                                        </ul>
+                                        <div class="anger-top anger">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Xem nhiều</a>
+                                        <div class="anger-bot anger">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="list-child">
+                                            <li class="item-child"><a href="">Trong ngày</a></li>
+                                            <li class="item-child"><a href="">Tuần này</a></li>
+                                            <li class="item-child"><a href="">Tuần trước</a></li>
+                                            <li class="item-child"><a href="">Tháng này</a></li>
+                                            <li class="item-child"><a href="">Tháng trước</a></li>
+                                            <li class="item-child"><a href="">Mùa này</a></li>
+                                            <li class="item-child"><a href="">Mùa trước</a></li>
+                                            <li class="item-child"><a href="">Tất cả</a></li>
+                                        </ul>
+                                        <div class="anger-top anger">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Bình luận nhiều</a>
+                                        <div class="anger-bot anger">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="list-child">
+                                            <li class="item-child"><a href="">Trong ngày</a></li>
+                                            <li class="item-child"><a href="">Năm này</a></li>
+                                            <li class="item-child"><a href="">Năm trước</a></li>
+                                            <li class="item-child"><a href="">Mùa này</a></li>
+                                            <li class="item-child"><a href="">Mùa trước</a></li>
+                                            <li class="item-child"><a href="">Tất cả</a></li>
+                                        </ul>
+                                        <div class="anger-top anger">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Kết hợp thể loại</a>
+                                        <div class="anger-bot anger">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="list-child">
+                                            <li class="item-child"><a href="">Đời thường</a></li>
+                                            <li class="item-child"><a href="">Hành động + Hài hước</a></li>
+                                            <li class="item-child"><a href="">Harem + Hài hước</a></li>
+                                            <li class="item-child"><a href="">Đời thường + Học đường</a></li>
+                                            <li class="item-child"><a href="">Romance + Tragedy</a></li>
+                                            <li class="item-child"><a href="">Lãng mạn + Hành động</a></li>
+                                            <li class="item-child"><a href="">Ecchi + Harem</a></li>
+                                            <li class="item-child"><a href="">Học đường+ ecchi</a></li>
+                                            <li class="item-child"><a href="">Kết hợp ngẫu nhiên</a></li>
+                                        </ul>
+                                        <div class="anger-top anger">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Năm phát hành</a>
+                                        <div class="anger-bot anger">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="list-child">
+                                            <li class="item-child"><a href="">2010</a></li>
+                                            <li class="item-child"><a href="">2011</a></li>
+                                            <li class="item-child"><a href="">2012</a></li>
+                                            <li class="item-child"><a href="">2013</a></li>
+                                            <li class="item-child"><a href="">2014</a></li>
+                                            <li class="item-child"><a href="">2015</a></li>
+                                            <li class="item-child"><a href="">2016</a></li>
+                                            <li class="item-child"><a href="">2017</a></li>
+                                            <li class="item-child"><a href="">2018</a></li>
+                                            <li class="item-child"><a href="">2019</a></li>
+                                            <li class="item-child"><a href="">2020</a></li>
+                                            <li class="item-child"><a href="">2021</a></li>
+                                            <li class="item-child"><a href="">2022</a></li>
+                                        </ul>
+                                        <div class="anger-top anger">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Hỏi đáp</a>
+                                    </li>
+                                    
+                                    <li class="item">
+                                        <a href="">TV/MOVIE</a><div class="anger-bot anger">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="list-child" id="last">
+                                            <li class="item-child"><a href="">TV series</a></li>
+                                            <li class="item-child"><a href="">Movie</a></li>
+                                            <li class="item-child"><a href="">Drama-live action</a></li>
+                                            <li class="item-child"><a href="">Ova</a></li>
+                                            <li class="item-child"><a href="">SP</a></li>
+                                            <li class="item-child"><a href="">Cartoon</a></li>
+                                        </ul>
+                                        <div class="anger-top anger">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="register-login-respon">
+                                        <ul class="list-child-x">
+                                            <li class="item-child"><a href="">Đăng kí</a></li>
+                                            <li class="item-child"><a href="">Đăng nhập</a></li>
+                                            <li class="item-child"><a href="">Đăng nhập bằng facebook</a></li>                                
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="anime-outstanding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carouselId" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselId" data-slide-to="1"></li>
+                                <li data-target="#carouselId" data-slide-to="2"></li>
+                                <li data-target="#carouselId" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid" src="images/images-standouts/1.jpg" data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/images-standouts/2.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/images-standouts/3.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/images-standouts/5.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Four slide">
+                                </div>                      
+                                
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+         <div id="content" class="mt-4">
+            <div id="anime-new-update" class="container">
+                 <div class="row">
+                    <div class="col-lg-12 row">
+                     <h5 id="anime-update" class="col-md-12 text-uppercase pt-4 pl-4 col-lg-3 texy-center d-inline-block text-warning">Anime mới cập nhật</h4>
+                     <nav class="breadcrumb col-md-12 col-lg-9 bg-dark">
+                        <a class="breadcrumb-item rounded-pill ml-3 active text-light" href="#">Tất cả</a>
+                        <a class="breadcrumb-item rounded-pill ml-3" href="#">Mùa này</a>
+                        <a class="breadcrumb-item rounded-pill ml-3" href="#">Mùa trước</a>
+                        <a class="breadcrumb-item rounded-pill ml-3" href="#">Bộ cũ</a>
+                     </nav>
+                    </div>
+                   <ul class="anime-list col-lg-9 col-12 row">
+                    <li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/1 (1).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Isekai Ohimesama</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top ">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/2 (2).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Naruto</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/2 (3).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Isekai shokudou</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/2 (4).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Sonohi, slime ni natteshimaimashita</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/2 (5).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Marimashita Iruma-kun</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/2 (6).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Youkosho Erai kurasu ni harimashou</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/2 (7).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Bleach</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="col-lg-3 col-md-4 col-6">
+                            <div class="anime-item">
+                                <div class="anime-item-top">
+                                    <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/3 (1).png" alt=""></a>
+                                </div>
+                                <div class="anime-item-bottom">
+                                    <a href="" class="anime-name text-center d-block text-uppercase">One piece</a>
+                                    <div class="interactive pb-1">
+                                        <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                        <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    <li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/1 (9).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Tsuki ga michibiku</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/4 (1).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Shigatsu wa kimi no uso</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/1 (11).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Tsuki ga kirei</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/1 (12).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Arifureta isekai</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/1 (13).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Dragon ball</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/1 (14).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Kagura-sama wa koi wo shiranai</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/1 (15).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Grand blue</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-lg-3 col-md-4 col-6">
+                        <div class="anime-item">
+                            <div class="anime-item-top">
+                                <a href="" class="anime-img d-block"><img class="img-thumbnail" src="images/images-content/4 (2).png" alt=""></a>
+                            </div>
+                            <div class="anime-item-bottom">
+                                <a href="" class="anime-name text-center d-block text-uppercase">Boku no pico</a>
+                                <div class="interactive pb-1">
+                                    <a href="" class="anime-comment text-light d-inline-block pl-2"><i class="fa-solid fa-comment-dots"></i></a>
+                                    <a href="" class="anime-view text-light">7777 <i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>                       
+                    </li>
+                    <li class="col-lg-12" id="anime-list-navigation">
+                         <nav aria-label="Page navigation">
+                           <ul class="pagination justify-content-center">
+                             <li class="page-item disabled">
+                               <a class="page-link" href="#" aria-label="Previous">
+                                 <span aria-hidden="true">&laquo;</span>
+                                 <span class="sr-only">Previous</span>
+                               </a>
+                             </li>
+                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                             <li class="page-item"><a class="page-link" href="#">2</a></li>
+                             <li class="page-item"><a class="page-link" href="#">3</a></li>
+                             <li class="page-item"><a class="page-link" href="#">4</a></li>
+                             <li class="page-item"><a class="page-link" href="#">5</a></li>
+                             <li class="page-item">
+                               <a class="page-link" href="#" aria-label="Next">
+                                 <span aria-hidden="true">&raquo;</span>
+                                 <span class="sr-only">Next</span>
+                               </a>
+                             </li>
+                           </ul>
+                         </nav>
+                    </li>
+                   </ul>
+                   <div id="anime-top-view" class="col-lg-3 d-flex row">
+                        <div id="anime-advertisment" class="col-lg-12">
+                           <h5 class="text-uppercase text-center bg-success text-light pt-1 pb-1">Hãy like và ủng hộ cho chúng tôi<h5>
+                            <div id="anime-advertisment-content">
+                            <div class="fb-page" data-href="https://www.facebook.com/AnimeTVN.tv/" data-tabs="timeline" data-width="262" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AnimeTVN.tv/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AnimeTVN.tv/">Anime TVN - Online</a></blockquote></div>
+                            </div>
+                        </div>
+                        <div id="anime-view" class="col-lg-12 ">
+                            <h5 class="text-uppercase text-warning"><i class="fa-solid fa-star mr-1"></i>Xem nhiều nhất</h5>
+                            <div id="anime-view-time">
+                                <nav class="nav nav-tabs nav-stacked" id="home-tab">
+                                    <a data-toggle="tab" class="nav-link active" href="#tab-content-1">Ngày</a>
+                                    <a data-toggle="tab" class="nav-link" href="#tab-content-2">Tuần</a>
+                                    <a data-toggle="tab" class="nav-link" href="#tab-content-3">Tháng</a>
+                                    <a data-toggle="tab" class="nav-link" href="#tab-content-4">Mùa</a>
+                                    <a data-toggle="tab" class="nav-link" href="#tab-content-5">Năm</a>
+                                </nav>
+                                <div class="tab-content">
+                                    <div class="active tab-pane show fade day" id="tab-content-1">
+                                        <ul class="view-list"> 
+                                            <li class="view-item most-view">                                 
+                                                <span class=" name-most-view text-uppercase">
+                                                    <a href="" class="text-light">Yofukashi no uta</a>
+                                                </span>
+                                                <span class="numbers-view">2160 Lượt xem</span>
+                                                <span class="most-view-espisodes text-light">01/??</span>
+                                            </li>
+                                            <li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/6037186_Vermeil-in-Gold-jpsharing.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kinsou no vermeil</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/f17eee8f4870766c_c3a69e8e515ff84d_4572316557078518118684.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kanojo okarishimasu</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/maxresdefault.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kakkou no iinazuke</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/162869905_1872470836270164_5444754298390298631_n.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Date a Live IV</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/overlord-wiki.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Overlord</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/Mamahaha-no-Tsurego-ga-Moto-Kano-Datta-TV-Anime-Slated-for-2022-Visual-Cast-Staff-PV-Revealed.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Mamahaha no tsurego ga motokano datta</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/maxresdefault (1).jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Jashin-chan Dropkick</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/Warau-Ars-Notoria-Game-nhap-vai-cute-lac-loi-chinh-thuc-ra-mat-o-Nhat-1.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Warau Asnotonia</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/portada_kumichou-musume.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kumi chou musume to Sewagaki</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class=" tab-pane show fade week" id="tab-content-2">
+                                        <ul class="view-list"> 
+                                            <li class="view-item most-view">                                 
+                                                <span class=" name-most-view text-uppercase">
+                                                    <a href="" class="text-light">Yofukashi no uta</a>
+                                                </span>
+                                                <span class="numbers-view">2160 Lượt xem</span>
+                                                <span class="most-view-espisodes text-light">01/??</span>
+                                            </li>
+                                            <li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/6037186_Vermeil-in-Gold-jpsharing.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kinsou no vermeil</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/f17eee8f4870766c_c3a69e8e515ff84d_4572316557078518118684.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kanojo okarishimasu</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/maxresdefault.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kakkou no iinazuke</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/162869905_1872470836270164_5444754298390298631_n.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Date a Live IV</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/overlord-wiki.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Overlord</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/Mamahaha-no-Tsurego-ga-Moto-Kano-Datta-TV-Anime-Slated-for-2022-Visual-Cast-Staff-PV-Revealed.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Mamahaha no tsurego ga motokano datta</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/maxresdefault (1).jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Jashin-chan Dropkick</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/Warau-Ars-Notoria-Game-nhap-vai-cute-lac-loi-chinh-thuc-ra-mat-o-Nhat-1.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Warau Asnotonia</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li><li class="view-item">
+                                                <div class="card">
+                                                    <div class="no-gutters row">
+                                                        <div class="col-lg-4">
+                                                          <img class="card-img" src="images/images-top-view/Day/portada_kumichou-musume.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="card-body">
+                                                                <a href="">
+                                                                <span class="card-text name-top-view text-light">Kumi chou musume to Sewagaki</span>
+                                                                </a>
+                                                                <span class="card-text numbers-view">2295 lượt xem</span>
+                                                                <span class="card-text espisodes text-light">01/??</span>
+                                                              </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class=" tab-pane show fade month" id="tab-content-3"><ul class="view-list"> 
+                                        <li class="view-item most-view">                                 
+                                            <span class=" name-most-view text-uppercase">
+                                                <a href="" class="text-light">Yofukashi no uta</a>
+                                            </span>
+                                            <span class="numbers-view">2160 Lượt xem</span>
+                                            <span class="most-view-espisodes text-light">01/??</span>
+                                        </li>
+                                        <li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/6037186_Vermeil-in-Gold-jpsharing.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kinsou no vermeil</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/f17eee8f4870766c_c3a69e8e515ff84d_4572316557078518118684.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kanojo okarishimasu</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/maxresdefault.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kakkou no iinazuke</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/162869905_1872470836270164_5444754298390298631_n.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Date a Live IV</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/overlord-wiki.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Overlord</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/Mamahaha-no-Tsurego-ga-Moto-Kano-Datta-TV-Anime-Slated-for-2022-Visual-Cast-Staff-PV-Revealed.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Mamahaha no tsurego ga motokano datta</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/maxresdefault (1).jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Jashin-chan Dropkick</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/Warau-Ars-Notoria-Game-nhap-vai-cute-lac-loi-chinh-thuc-ra-mat-o-Nhat-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Warau Asnotonia</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/portada_kumichou-musume.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kumi chou musume to Sewagaki</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul></div>
+                                    <div class=" tab-pane show fade season" id="tab-content-4"><ul class="view-list"> 
+                                        <li class="view-item most-view">                                 
+                                            <span class=" name-most-view text-uppercase">
+                                                <a href="" class="text-light">Yofukashi no uta</a>
+                                            </span>
+                                            <span class="numbers-view">2160 Lượt xem</span>
+                                            <span class="most-view-espisodes text-light">01/??</span>
+                                        </li>
+                                        <li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/6037186_Vermeil-in-Gold-jpsharing.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kinsou no vermeil</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/f17eee8f4870766c_c3a69e8e515ff84d_4572316557078518118684.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kanojo okarishimasu</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/maxresdefault.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kakkou no iinazuke</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/162869905_1872470836270164_5444754298390298631_n.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Date a Live IV</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/overlord-wiki.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Overlord</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/Mamahaha-no-Tsurego-ga-Moto-Kano-Datta-TV-Anime-Slated-for-2022-Visual-Cast-Staff-PV-Revealed.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Mamahaha no tsurego ga motokano datta</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/maxresdefault (1).jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Jashin-chan Dropkick</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/Warau-Ars-Notoria-Game-nhap-vai-cute-lac-loi-chinh-thuc-ra-mat-o-Nhat-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Warau Asnotonia</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/portada_kumichou-musume.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kumi chou musume to Sewagaki</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul></div>
+                                    <div class=" tab-pane show fade year" id="tab-content-5"><ul class="view-list"> 
+                                        <li class="view-item most-view">                                 
+                                            <span class=" name-most-view text-uppercase">
+                                                <a href="" class="text-light">Yofukashi no uta</a>
+                                            </span>
+                                            <span class="numbers-view">2160 Lượt xem</span>
+                                            <span class="most-view-espisodes text-light">01/??</span>
+                                        </li>
+                                        <li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/6037186_Vermeil-in-Gold-jpsharing.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kinsou no vermeil</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/f17eee8f4870766c_c3a69e8e515ff84d_4572316557078518118684.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kanojo okarishimasu</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/maxresdefault.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kakkou no iinazuke</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/162869905_1872470836270164_5444754298390298631_n.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Date a Live IV</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/overlord-wiki.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Overlord</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/Mamahaha-no-Tsurego-ga-Moto-Kano-Datta-TV-Anime-Slated-for-2022-Visual-Cast-Staff-PV-Revealed.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Mamahaha no tsurego ga motokano datta</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/maxresdefault (1).jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Jashin-chan Dropkick</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/Warau-Ars-Notoria-Game-nhap-vai-cute-lac-loi-chinh-thuc-ra-mat-o-Nhat-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Warau Asnotonia</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li><li class="view-item">
+                                            <div class="card">
+                                                <div class="no-gutters row">
+                                                    <div class="col-lg-4">
+                                                      <img class="card-img" src="images/images-top-view/Day/portada_kumichou-musume.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body">
+                                                            <a href="">
+                                                            <span class="card-text name-top-view text-light">Kumi chou musume to Sewagaki</span>
+                                                            </a>
+                                                            <span class="card-text numbers-view">2295 lượt xem</span>
+                                                            <span class="card-text espisodes text-light">01/??</span>
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul></div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                 </div>
+            </div>
+         </div>
+        <div id="footer">
+
+         </div>
+    </div>
+
+    
+
+</body>
+
+</html>

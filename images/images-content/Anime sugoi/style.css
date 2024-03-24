@@ -1,0 +1,338 @@
+body {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+#header{
+    position: relative;
+    z-index: 1;
+}
+#header-top {
+    background-color: rgb(69, 67, 67);
+    max-height: 70px;
+}
+
+#logo a {
+    display: block;
+    height: 70px;
+}
+
+#logo a img {
+    height: 100%;
+    width: auto;
+}
+
+#search {
+    padding: 15px 0px;
+}
+
+#search form {
+    width: 100%;
+}
+
+#search input {
+    border: none;
+    color: #ffff;
+}
+
+#search label {
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 3px;
+    color: #ffff;
+    font-weight: normal;
+}
+
+#register-login {
+    padding: 15px 30px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+#register-login .log-fb {
+    margin-left: 10px;
+}
+
+#header-bottom {
+    background-color: #000;
+}
+
+#header-bottom #navbar ul.list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#header-bottom #navbar ul.list li.item>a {
+    color: rgb(215, 213, 213);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#header-bottom #navbar ul.list ul.list-child a {
+    color: rgb(215, 213, 213);
+}
+
+#header-bottom #navbar ul.list li.item {
+    padding: 15px 0px;
+}
+
+#header-bottom #navbar ul.list li.item a {
+    transition: all 0.25s ease-in-out;
+}
+
+#header-bottom #navbar ul.list li.item:hover>a {
+    color: rgb(213, 51, 51);
+}
+
+#header-bottom #navbar ul.list ul.list-child {
+    position: absolute;
+    top: 53px;
+    display: none;
+    background-color: rgb(41, 40, 40);
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#header-bottom #navbar ul.list ul.list-child li {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#header-bottom #navbar ul.list ul.list-child li:hover {
+    background-color: rgb(96, 94, 94);
+    border: 0.05px solid rgb(164, 157, 157);
+}
+
+#header-bottom #navbar ul.list ul.list-child li:hover a {
+    color: rgb(247, 107, 107);
+}
+
+#header-bottom #navbar ul.list li.item:hover ul.list-child {
+    display: block;
+}
+
+#header-bottom #navbar ul.list li.item ul.list-child:hover {
+    display: block;
+}
+
+#navbar-responsive {
+    display: none;
+}
+#navbar-icon{
+    display: none;
+}
+/* ----------------------------End header----------------------- */
+
+
+#carouselId ol.carousel-indicators li{
+    background-color: red;
+   }
+
+ #anime-outstanding .container{
+    z-index: -1;
+}
+
+/* --------------------------End Anime outstanding---------------------- */
+nav.breadcrumb{
+    background-color: gray;
+}
+nav.breadcrumb a{
+    display: inline-block;
+    background-color: #607D8B;
+    color: #c3c3c3;
+    transition: all 0.25s ease-in-out;
+    padding: 8px 8px;
+    
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: none;
+}
+nav.breadcrumb a:hover{
+    background-color: rgb(31, 76, 76)
+}
+ul.anime-list li{
+    padding: 0px 10px;
+    margin-bottom: 15px;
+}
+.anime-item{
+    background-color: rgb(64, 64, 64);
+}
+.anime-item-top img{
+    width: 100%;
+    height: auto;
+}
+.anime-item-bottom a.anime-name{
+    color: #44e2ff;
+    display: block;
+    margin-top: 10px;
+}
+.interactive{
+    position: relative;
+}
+.anime-view{
+   position: absolute;
+    right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1199.98px) {
+    #navbar {
+        display: none;
+    }
+    #search {
+        display: none;
+    }
+  
+    #navbar-icon {
+        color: #ffff;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        display: block;
+    }
+    #header-bottom{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+    }
+
+    #navbar-responsive {
+        display: block;
+        padding: 10px 0px;
+        padding-left: 30px;
+    }
+    
+    #navbar-res ul.list  {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar-res #register-login-respon{
+        display: none;
+    }
+    #navbar-res #register-login-respon ul{
+        display: block;
+        padding:10px 0px;
+        border-top: 0.5px solid #fff;
+        margin-top: 15px;
+    }
+    #navbar-res #register-login-respon ul li{
+        margin-bottom: 10px;
+    }
+    #navbar-res ul.list ul.list-child {
+        display: none;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0px;
+        padding-left: 15px;
+        
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #navbar-res ul.list ul.list-child#last{
+        border-bottom: none;
+    }
+   
+    #search-responsive {
+        margin-bottom: 15px;
+    }
+    #search-responsive form{
+        width: 100%;
+    }
+    #search-responsive input{
+        color: #ffff;
+        width: 90%;
+    }
+    #search-responsive label {
+        color: #fff;
+        display: inline-block;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #navbar-responsive ul.list>li{
+        margin-bottom: 10px;
+        padding-left: 5px;
+        position: relative;
+    }
+    #navbar-responsive ul.list>li a{
+        color: rgb(204, 199, 199);
+    }
+    #navbar-responsive ul.list li:hover>a{
+          color: rgb(231, 87, 87);
+    }
+ 
+    .anger{
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        width: 50px;
+        text-align: center;
+    }
+    .anger-top{
+        display: none;
+    }
+
+
+   /* ---------------------- End header------------------ */
+    #anime-outstanding{
+        display: none;
+    }
+   
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media(max-width:991.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media(max-width:767.98px) {
+    #register-login {
+        display: none;
+    }
+    #navbar-res #register-login-respon{
+        display: block;
+    }
+    #navbar-icon{
+        display: block;
+    }
+}
+
+/* Extra small devices (portrait phone, less than 576px) */
+@media (max-width:575.98px) {
+    #search-responsive input{
+        color: #ffff;
+        width: 80%;
+    }
+
+}
